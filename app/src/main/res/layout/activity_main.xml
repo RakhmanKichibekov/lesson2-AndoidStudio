@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/upper_bg"
+        android:layout_width="match_parent"
+        android:layout_height="110sp"
+        android:background="@color/bg2">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_box"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_below="@id/upper_bg"
+        android:background="@color/white"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="-25sp">
+
+        <Button
+            android:id="@+id/search_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="40sp"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="goSecond"
+            android:text="@string/start_new_activity" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/downpg2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation = "vertical"
+        android:layout_marginHorizontal="50sp"
+        android:layout_below="@id/main_box"
+        android:background="@color/bg"
+        >
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:textSize="20sp"
+            android:layout_marginTop="5sp"
+            android:textColor="@color/black"
+            android:text="@string/time"/>
+
+        <Button
+            android:id="@+id/timeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="45sp"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="goBlog"
+            android:layout_marginTop="20sp"
+            android:text="@string/set_the_time" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/downpg3"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation = "vertical"
+        android:layout_marginHorizontal="50sp"
+        android:layout_below="@id/downpg2"
+        android:background="@color/bg"
+        >
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:textSize="20sp"
+            android:layout_marginTop="5sp"
+            android:textColor="@color/black"
+            android:text="@string/date"/>
+
+        <Button
+            android:id="@+id/dateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="45sp"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="goBlog"
+            android:layout_marginTop="20sp"
+            android:text="@string/set_date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/downpg4"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation = "vertical"
+        android:layout_marginHorizontal="50sp"
+        android:layout_below="@id/downpg3"
+        android:background="@color/bg"
+        >
+
+        <Button
+            android:id="@+id/progressButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="45sp"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="goBlog"
+            android:layout_marginTop="40sp"
+            android:text="@string/loading_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/downpg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/main2"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="goCountWords"
+            android:text="@string/count_words" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="goBlog"
+            android:text="@string/mirea" />
+    </LinearLayout>
+</RelativeLayout>

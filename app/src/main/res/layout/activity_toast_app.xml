@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/upper_bg"
+        android:layout_width="match_parent"
+        android:layout_height="110sp"
+        android:background="@color/bg2">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_box"
+        android:layout_width="match_parent"
+        android:layout_height="170sp"
+        android:layout_below="@id/upper_bg"
+        android:background="@color/white"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="-40sp">
+
+        <EditText
+            android:id="@+id/userNameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="15sp"
+            android:ems="10"
+            android:hint="@string/EnterText"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/search_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="60sp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/CountWords" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/downpg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg2">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:onClick="goFirst"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/main2"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="goCountWords"
+            android:text="@string/count_words" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="goBlog"
+            android:text="@string/mirea" />
+    </LinearLayout>
+
+</RelativeLayout>
